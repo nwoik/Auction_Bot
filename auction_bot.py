@@ -100,7 +100,7 @@ async def create_channel(context, channelName):
     channelName = "「🔨」" + channelName
     guild = context.guild
     for category in guild.categories:
-        if category.id == 701856425965649992:
+        if category.id == 701856425965649992 or category.id == 701856425965649992:
             c = await category.create_text_channel(name=channelName)
             return c
 
