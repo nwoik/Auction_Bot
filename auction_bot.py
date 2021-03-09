@@ -5,9 +5,7 @@ import random
 import json
 import os
 import time
-import threading
 import datetime
-import requests
 import datetime
 import asyncio
 from datetime import timedelta
