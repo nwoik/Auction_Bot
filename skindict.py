@@ -515,7 +515,7 @@ skin_dict ={'Frostbite': 'https://assets.krunker.io/textures/previews/melee/mele
             'Carotine': 'https://static.wikia.nocookie.net/krunkerio/images/5/5d/Carotine.png', 
             'RGB': 'https://static.wikia.nocookie.net/krunkerio/images/1/1c/5_4.png', 
             'Coldsnap': 'https://static.wikia.nocookie.net/krunkerio/images/8/88/5_9_%281%29.png', 
-            'Crimson': 'https://static.wikia.nocookie.net/krunkerio/images/d/d6/5_5_%281%29.png', 
+            'Crimson Dye': 'https://static.wikia.nocookie.net/krunkerio/images/d/d6/5_5_%281%29.png', 
             'Lavender': 'https://static.wikia.nocookie.net/krunkerio/images/8/86/5_6_%281%29.png', 
             'Terra': 'https://static.wikia.nocookie.net/krunkerio/images/f/f0/5_7_%281%29.png', 
             'Amberite': 'https://static.wikia.nocookie.net/krunkerio/images/c/c1/5_8_%281%29.png',
