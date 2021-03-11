@@ -874,7 +874,7 @@ skin_dict ={'Frostbite': 'https://assets.krunker.io/textures/previews/melee/mele
             'NeoTitan': 'https://assets.krunker.io/textures/previews/weapons/weapon_2_220.png', 
             'Full Moon': 'https://assets.krunker.io/textures/previews/weapons/weapon_2_221.png', 
             'Nightmare': 'https://assets.krunker.io/textures/previews/weapons/weapon_2_222.png', 
-            'Crimson': 'https://assets.krunker.io/textures/previews/weapons/weapon_2_42.png', 
+            'Crimson AK': 'https://assets.krunker.io/textures/previews/weapons/weapon_2_42.png', 
             'Corruption': 'https://assets.krunker.io/textures/previews/weapons/weapon_2_224.png', 
             'Onamu': 'https://assets.krunker.io/textures/previews/weapons/weapon_2_226.png', 
             'Celeste': 'https://assets.krunker.io/textures/previews/weapons/weapon_2_230.png', 
