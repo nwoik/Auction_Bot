@@ -203,6 +203,19 @@ async def end_auction(context):
                     await context.send("This auction isn't over yet. (a.deadline to check when it is)")
 
 @client.command()
+@commands.has_permissions(manage_messages=True)
+async def giveaway(context, finished=None):
+    guild = context.guild
+    if finished == None:
+        for channel in guild.channels:
+            if channel.id == 701856425965649994:
+                await channel.send("Go to <#764399050866819082> and react for daily giveaways")
+                await asyncio.sleep(7200)
+                await giveaway()
+    else:
+        await context.send("No more reminders will be sent")
+
+@client.command()
 async def skin(context, skin=None):
     if skin == None:
         await context.send("Add a skin name please")
