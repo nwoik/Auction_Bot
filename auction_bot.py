@@ -144,7 +144,7 @@ async def auction(context, skin, last_sold, seller, duration):
 
     
     try:
-        await c.send("@Auctions Ping")
+        await c.send("<@814039153943248947>")
         m = c.send(embed=embed)
         await m
         auc = Auction(embed, c, m, starting_bid, context.author, seller, duration)
