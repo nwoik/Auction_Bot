@@ -208,7 +208,7 @@ async def giveaway(context, finished=None):
     guild = context.guild
     if finished == None:
         for channel in guild.channels:
-            if channel.id == 701856425965649994:
+            if channel.id == 764378320665837601:
                 await channel.send("Go to <#764399050866819082> and react for daily giveaways")
                 await asyncio.sleep(7200)
                 await giveaway()
