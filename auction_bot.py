@@ -204,7 +204,7 @@ async def end_auction(context):
 
 @client.command()
 @commands.has_permissions(manage_messages=True)
-async def giveaway(context, giveaway_name=None, giveaway_channel=None, finished=None):
+async def giveaway(context, finished=None, giveaway_name=None, giveaway_channel=None):
     guild = context.guild
     if finished == None:
         for channel in guild.channels:
