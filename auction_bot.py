@@ -202,24 +202,24 @@ async def end_auction(context):
                 else:
                     await context.send("This auction isn't over yet. (a.deadline to check when it is)")
 
-@client.command()
-@commands.has_permissions(manage_messages=True)
-async def giveaway(context, giveaway_channel:discord.TextChannel, giveaway_name=None, finished=None):
-    guild = context.guild
-    if finished == None:
-        for channel in guild.channels:
-            if channel.id == 764378320665837601:
-                if giveaway_name != None and giveaway_channel != None:
-                    await channel.send("Go to <#%s> and react for %s giveaway" % (giveaway_channel.id, giveaway_name))
-                    await asyncio.sleep(7200)
-                    await giveaway()
+# @client.command()
+# @commands.has_permissions(manage_messages=True)
+# async def giveaway(context, giveaway_channel:discord.TextChannel, giveaway_name=None, finished=None):
+#     guild = context.guild
+#     if finished == None:
+#         for channel in guild.channels:
+#             if channel.id == 764378320665837601:
+#                 if giveaway_name != None and giveaway_channel != None:
+#                     await channel.send("Go to <#%s> and react for %s giveaway" % (giveaway_channel.id, giveaway_name))
+#                     await asyncio.sleep(7200)
+#                     await giveaway()
 
-                else:
-                    await channel.send("Go to <#764399050866819082> and react for daily giveaways")
-                    await asyncio.sleep(7200)
-                    await giveaway()
-    else:
-        await context.send("No more reminders will be sent")
+#                 else:
+#                     await channel.send("Go to <#764399050866819082> and react for daily giveaways")
+#                     await asyncio.sleep(7200)
+#                     await giveaway()
+#     else:
+#         await context.send("No more reminders will be sent")
 
 @client.command()
 async def skin(context, skin=None):
