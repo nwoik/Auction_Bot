@@ -204,13 +204,13 @@ async def end_auction(context):
 
 @client.command()
 @commands.has_permissions(manage_messages=True)
-async def giveaway(context, giveaway_name=None, giveaway_channel=None, finished=None):
+async def giveaway(context, giveaway_channel:discord.TextChannel, giveaway_name=None, finished=None):
     guild = context.guild
     if finished == None:
         for channel in guild.channels:
             if channel.id == 764378320665837601:
                 if giveaway_name != None and giveaway_channel != None:
-                    await channel.send("Go to %s and react for %s giveaway" % (giveaway_channel, giveaway_name))
+                    await channel.send("Go to <#%s> and react for %s giveaway" % (giveaway_channel.id, giveaway_name))
                     await asyncio.sleep(7200)
                     await giveaway()
 
