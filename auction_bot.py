@@ -127,7 +127,7 @@ async def auction(context, skin, last_sold, seller, duration):
     embed = discord.Embed(title="%s" % skin, description="", timestamp=context.message.created_at, color=discord.Color.blue())
     embed.set_thumbnail(url=guild.icon_url)
     try:
-        embed.set_image(url=skin_dict[skin])
+        embed.set_image(url=skin_dict[skin.lower()])
     except KeyError:
         await context.send("Check the skin name please. (It's case sensitive)")
         return
@@ -230,7 +230,7 @@ async def skin(context, skin=None):
     embed = discord.Embed(title="%s" % skin, description="", timestamp=context.message.created_at, color=discord.Color.blue())
     embed.set_thumbnail(url=guild.icon_url)
     try:
-        embed.set_image(url=skin_dict[skin])
+        embed.set_image(url=skin_dict[skin.lower()])
     except KeyError:
         await context.send("Check the skin name please. (It's case sensitive)\nAlso if the skin name has a [SPACE] either put it in ' '.")
         return
