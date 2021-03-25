@@ -124,7 +124,7 @@ async def auction(context, skin, last_sold, seller, duration):
         await context.send("Last sold has to be a number. Don't add 'KR' after.\nAlso if the skin name has a [SPACE] either put it in ' '.")
         return
     guild = context.guild
-    embed = discord.Embed(title="%s" % skin, description="", timestamp=context.message.created_at, color=discord.Color.blue())
+    embed = discord.Embed(title="%s" % skin.capitalize(), description="", timestamp=context.message.created_at, color=discord.Color.blue())
     embed.set_thumbnail(url=guild.icon_url)
     try:
         embed.set_image(url=skin_dict[skin.lower()])
@@ -227,7 +227,7 @@ async def skin(context, skin=None):
         await context.send("Add a skin name please")
         return 
     guild = context.guild
-    embed = discord.Embed(title="%s" % skin, description="", timestamp=context.message.created_at, color=discord.Color.blue())
+    embed = discord.Embed(title="%s" % skin.capitalize(), description="", timestamp=context.message.created_at, color=discord.Color.blue())
     embed.set_thumbnail(url=guild.icon_url)
     try:
         embed.set_image(url=skin_dict[skin.lower()])
