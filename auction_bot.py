@@ -101,7 +101,7 @@ async def create_channel(context, channelName):
     guild = context.guild
     for category in guild.categories:
         if category.id == 701856425965649992 or category.id == 813803826573475902:
-            c = await category.create_text_channel(name=channelName)
+            c = await category.create_text_channel(name=channelName, permissions_synced=True)
             return c
 
 
