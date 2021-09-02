@@ -237,4 +237,5 @@ async def skin(context, skin=None):
     embed.set_footer(text="Requested by %s" % context.author, icon_url=context.author.avatar_url)
     await context.send(embed=embed)
 
-client.run("ODE0NTQ5Njk3NTY1Mjk0NjQz.YDfehQ.IuLfzqA5q89ZDE__a0tS_n3wnWQ")
+my_key = os.environ["KEY"]
+client.run(KEY)
