@@ -238,4 +238,4 @@ async def skin(context, skin=None):
     await context.send(embed=embed)
 
 my_key = os.environ["KEY"]
-client.run(KEY)
+client.run(my_key)
